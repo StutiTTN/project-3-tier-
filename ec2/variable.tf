@@ -1,6 +1,6 @@
 variable "ami_ec2" {
     type = string
-    default = "ami-04505e74c0741db8d"
+    default = "ami-03f24a39c7348c503"
     description = "AMI ID for ec2 instance"
 }
 
@@ -31,4 +31,7 @@ variable "private_subnet_id_2_ec2" {
 }
 
 variable "security_group_instance_ec2" {
+}
+
+variable "user_data_public" {
 }
