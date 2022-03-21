@@ -1,0 +1,8 @@
+Mentioned below are the addons made in the project:
+(1) Wordpress application deployed
+(2) Web servers now deployed in private subnet
+(3) Added Bastion Host 
+(4) Autoscaling implemented
+(5) Optimzed the security groups
+(6) Used NAT gateways
+(7) Architechture redesigned

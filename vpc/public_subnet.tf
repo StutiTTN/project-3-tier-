@@ -3,6 +3,9 @@ resource "aws_subnet" "public_subnet_1" {
   cidr_block              = var.cidr_block_public_subnet_1
   availability_zone       = "ap-south-1a"
   map_public_ip_on_launch = true
+  tags = {
+    Name = "Public-Subnet-1"
+  }
 }
 
 resource "aws_subnet" "public_subnet_2" {
@@ -10,4 +13,7 @@ resource "aws_subnet" "public_subnet_2" {
   cidr_block              = var.cidr_block_public_subnet_2
   availability_zone       = "ap-south-1b"
   map_public_ip_on_launch = true
+  tags = {
+    Name = "Public-Subnet-2"
+  }
 }

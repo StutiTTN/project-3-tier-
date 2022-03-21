@@ -1,0 +1,12 @@
+#!/bin/bash
+apt-get update
+apt-get install -y nginx
+systemctl stop nginx
+apt-get install -y mysql-client
+apt-get install -y php7.4 php7.4-gd php7.4-mysql php7.4-zip php7.4-fpm
+systemctl restart php7.4-fpm
+wget -P /home/ubuntu/ https://wordpress.org/latest.tar.gz
+tar -xzf /home/ubuntu/latest.tar.gz -C /var/www/
+chown -R www-data:www-data /var/www/wordpress
+unlink /etc/nginx/sites-enabled/default
+rm -rf /etc/nginx/sites-enabled/default
