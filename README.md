@@ -4,7 +4,6 @@ Requirements
 - AWS account
 - EC2 instance with Terraform and Jenkins configured
 - An AMI configured with Nginx, PHP and WordPress code
-- IAM service role attach with EC2 instance running Jenkins
 
 
 Architecture Diagram
